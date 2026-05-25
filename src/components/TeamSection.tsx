@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Linkedin, Mail, ShieldAlert, Cpu, Map, Zap } from "lucide-react";
+import { Share2, Mail, ShieldAlert, Cpu, Map, Zap } from "lucide-react";
 
 const team = [
   {
