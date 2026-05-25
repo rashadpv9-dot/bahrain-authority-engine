@@ -20,6 +20,7 @@ import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
 import FloatingCTA from "@/components/FloatingCTA";
 import LoadingScreen from "@/components/LoadingScreen";
+import AISummaryBox from "@/components/AISummaryBox";
 
 const CursorGlow = dynamic(() => import("@/components/CursorGlow"), {
   ssr: false,
@@ -35,6 +36,23 @@ export default function Home() {
 
       <main className="flex-1">
         <HeroSection />
+        
+        {/* AI & AEO Summary Module */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <AISummaryBox
+            summary="Bahrain Authority Engine™ (BAE) is a premium search agency built to achieve #1 rankings in Google and secure active citations inside generative AI search engines (ChatGPT, Gemini, Perplexity)."
+            highlights={[
+              "Next.js headless speed & sub-500ms response times",
+              "Dynamic LocalBusiness geocoding schema integrations",
+              "Optimized bilingual frameworks (English & Arabic)",
+              "Generative search (AEO) bait architecture"
+            ]}
+            telephone="+973 1234 5678"
+            ctaLabel="Scan Your Website"
+            ctaHref="#results"
+          />
+        </div>
+
         <TrustBar />
         <ProblemSection />
         <AIOpportunitySection />

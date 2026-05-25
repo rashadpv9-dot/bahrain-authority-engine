@@ -3,20 +3,26 @@
 import { Zap, MessageCircle, MapPin, Mail, Phone } from "lucide-react";
 
 const footerLinks = {
-  Services: [
-    { label: "AI SEO Strategy", href: "#services" },
-    { label: "Google Maps SEO", href: "#services" },
-    { label: "AI Content Engine", href: "#services" },
-    { label: "Lead Funnels", href: "#services" },
+  Industries: [
+    { label: "Healthcare SEO", href: "/industries/healthcare" },
+    { label: "Legal Firm SEO", href: "/industries/legal" },
+    { label: "F&B Local SEO", href: "/industries/food-and-beverage" },
+    { label: "E-commerce SEO", href: "/industries/ecommerce" },
+  ],
+  Locations: [
+    { label: "SEO Manama", href: "/locations/seo-manama" },
+    { label: "SEO Seef", href: "/locations/seo-seef" },
+    { label: "SEO Riffa", href: "/locations/seo-riffa" },
+    { label: "SEO Muharraq", href: "/locations/seo-muharraq" },
   ],
   Company: [
-    { label: "About Us", href: "#" },
-    { label: "Case Studies", href: "#results" },
-    { label: "Process", href: "#process" },
-    { label: "FAQ", href: "#faq" },
+    { label: "About Us", href: "/#services" },
+    { label: "Case Studies", href: "/#results" },
+    { label: "Process", href: "/#process" },
+    { label: "FAQ", href: "/#faq" },
   ],
   Legal: [
-    { label: "Privacy Policy", href: "#" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms of Service", href: "#" },
     { label: "Cookie Policy", href: "#" },
   ],
