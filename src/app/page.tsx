@@ -11,11 +11,14 @@ import CaseStudiesSection from "@/components/CaseStudiesSection";
 import ValueStackSection from "@/components/ValueStackSection";
 import ProcessSection from "@/components/ProcessSection";
 import DifferentiatorSection from "@/components/DifferentiatorSection";
+import HowWeThinkSection from "@/components/HowWeThinkSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import TeamSection from "@/components/TeamSection";
 import FAQSection from "@/components/FAQSection";
 import ScarcitySection from "@/components/ScarcitySection";
 import FinalCTASection from "@/components/FinalCTASection";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
 import FloatingCTA from "@/components/FloatingCTA";
@@ -61,11 +64,14 @@ export default function Home() {
         <ValueStackSection />
         <ProcessSection />
         <DifferentiatorSection />
+        <HowWeThinkSection />
         <GuaranteeSection />
         <TestimonialsSection />
+        <TeamSection />
         <FAQSection />
         <ScarcitySection />
         <FinalCTASection />
+        <ContactSection />
       </main>
 
       <Footer />

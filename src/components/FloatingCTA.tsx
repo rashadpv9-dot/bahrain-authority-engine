@@ -31,7 +31,7 @@ export default function FloatingCTA() {
           className="fixed bottom-0 left-0 right-0 z-[9996] md:hidden p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] bg-black-matte/90 backdrop-blur-xl border-t border-white/[0.06]"
         >
           <a
-            href="#book"
+            href="/#contact"
             className="group flex items-center justify-center gap-2 w-full py-3.5 bg-electric-blue text-white font-semibold rounded-full shadow-[0_0_20px_rgba(59,130,246,0.3)] text-sm"
           >
             Book Your Strategy Session

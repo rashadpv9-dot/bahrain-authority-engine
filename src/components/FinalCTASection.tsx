@@ -65,7 +65,7 @@ export default function FinalCTASection() {
           className="mt-8 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
         >
           <a
-            href="#book"
+            href="/#contact"
             id="final-cta-book"
             className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 sm:px-10 sm:py-5 bg-electric-blue hover:bg-electric-blue-dark text-white font-bold rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(59,130,246,0.5)] text-base sm:text-lg"
           >
@@ -74,7 +74,7 @@ export default function FinalCTASection() {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
-            href="#audit"
+            href="/#contact"
             id="final-cta-audit"
             className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 sm:px-8 sm:py-5 border border-white/10 hover:border-electric-blue/50 text-white font-semibold rounded-full transition-all duration-300 hover:bg-white/[0.03] text-base sm:text-lg"
           >

@@ -308,7 +308,7 @@ export default function HeroSection() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <a
-                href="#book"
+                href="/#contact"
                 id="hero-cta-book"
                 className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 bg-electric-blue hover:bg-electric-blue-dark text-white font-semibold rounded-full transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] text-sm sm:text-base"
               >
@@ -316,9 +316,9 @@ export default function HeroSection() {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="#audit"
+                href="/#contact"
                 id="hero-cta-audit"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 border border-white/10 hover:border-electric-blue/50 text-white font-semibold rounded-full transition-all duration-300 hover:bg-white/[0.03] text-sm sm:text-base"
+                className="group inline-flex inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 border border-white/10 hover:border-electric-blue/50 text-white font-semibold rounded-full transition-all duration-300 hover:bg-white/[0.03] text-sm sm:text-base"
               >
                 <Play className="w-4 h-4 text-electric-blue" />
                 Get Free AI Audit
