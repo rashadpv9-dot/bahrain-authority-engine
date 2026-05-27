@@ -6,48 +6,51 @@ import { TrendingUp, Users, MapPin, ArrowUpRight } from "lucide-react";
 
 const caseStudies = [
   {
-    title: "Bahrain Premium Clinic",
-    industry: "Healthcare",
+    title: "Bahrain Agent",
+    industry: "Company Formation",
+    desc: "Company formation & business setup assistant — went from zero international visibility to attracting overseas incorporation clients in 90 days.",
     results: [
-      { label: "Traffic Increase", value: "+312%", icon: TrendingUp },
-      { label: "Maps Ranking", value: "#1", icon: MapPin },
-      { label: "Consultation Inquiries", value: "4x", icon: Users },
+      { label: "International Leads", value: "+480%", icon: TrendingUp },
+      { label: "Google Ranking", value: "#1", icon: MapPin },
+      { label: "New Client Inquiries", value: "6x", icon: Users },
     ],
     beforeAfter: {
-      before: { traffic: 1200, leads: 8, ranking: 47 },
-      after: { traffic: 4944, leads: 32, ranking: 1 },
+      before: { traffic: 340, leads: 3, ranking: 62 },
+      after: { traffic: 4120, leads: 38, ranking: 1 },
     },
     period: "90 Days",
-    chartData: [15, 22, 28, 35, 42, 55, 68, 74, 85, 92, 96, 100],
+    chartData: [8, 14, 22, 35, 48, 58, 70, 80, 88, 93, 97, 100],
   },
   {
-    title: "Manama Law Partners",
-    industry: "Legal",
+    title: "NEC",
+    industry: "Engineering & Industrial",
+    desc: "National engineering and contracting services — secured top-3 rankings for high-value B2B procurement and project tender queries across the GCC.",
     results: [
-      { label: "Organic Traffic", value: "+287%", icon: TrendingUp },
-      { label: "Local Ranking", value: "#2", icon: MapPin },
-      { label: "Case Inquiries", value: "3.5x", icon: Users },
+      { label: "Organic Traffic", value: "+312%", icon: TrendingUp },
+      { label: "Local Maps Pack", value: "#2", icon: MapPin },
+      { label: "RFQ Submissions", value: "4.5x", icon: Users },
     ],
     beforeAfter: {
-      before: { traffic: 800, leads: 5, ranking: 38 },
-      after: { traffic: 3096, leads: 18, ranking: 2 },
+      before: { traffic: 890, leads: 6, ranking: 41 },
+      after: { traffic: 3664, leads: 27, ranking: 2 },
     },
     period: "120 Days",
     chartData: [10, 15, 20, 28, 38, 48, 55, 65, 72, 80, 88, 95],
   },
   {
-    title: "Luxury Dining Bahrain",
-    industry: "Restaurant",
+    title: "Yasmico",
+    industry: "Retail & Distribution",
+    desc: "Regional retail and consumer distribution group — dominated product category searches and drove direct-to-site orders bypassing aggregators.",
     results: [
       { label: "Search Visibility", value: "+425%", icon: TrendingUp },
       { label: "Google Maps", value: "#1", icon: MapPin },
-      { label: "Reservations", value: "5x", icon: Users },
+      { label: "Online Orders", value: "5x", icon: Users },
     ],
     beforeAfter: {
-      before: { traffic: 600, leads: 12, ranking: 52 },
-      after: { traffic: 3150, leads: 60, ranking: 1 },
+      before: { traffic: 720, leads: 14, ranking: 48 },
+      after: { traffic: 3780, leads: 70, ranking: 1 },
     },
-    period: "60 Days",
+    period: "90 Days",
     chartData: [12, 25, 38, 50, 62, 70, 78, 85, 90, 94, 97, 100],
   },
 ];
@@ -149,10 +152,13 @@ export default function CaseStudiesSection() {
                   </h3>
                   <ArrowUpRight className="w-4 h-4 text-electric-blue opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <div className="flex items-center gap-2 mb-6">
+                <div className="flex items-center gap-2 mb-3">
                   <span className="text-xs text-electric-blue font-medium">{study.industry}</span>
                   <span className="text-xs text-soft-gray">• {study.period}</span>
                 </div>
+                <p className="text-xs text-soft-gray/80 leading-relaxed mb-5">
+                  {study.desc}
+                </p>
 
                 {/* Results */}
                 <div className="space-y-3 mb-6">

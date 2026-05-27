@@ -8,6 +8,12 @@ const footerLinks = {
     { label: "Legal Firm SEO", href: "/industries/legal" },
     { label: "F&B Local SEO", href: "/industries/food-and-beverage" },
     { label: "E-commerce SEO", href: "/industries/ecommerce" },
+    { label: "Company Formation SEO", href: "/industries/company-formation" },
+    { label: "Engineering & Contracting SEO", href: "/industries/engineering" },
+    { label: "Retail & Distribution SEO", href: "/industries/retail-distribution" },
+    { label: "Real Estate SEO", href: "/industries/real-estate" },
+    { label: "Education & Training SEO", href: "/industries/education" },
+    { label: "Automotive SEO", href: "/industries/automotive" },
   ],
   Locations: [
     { label: "SEO Manama", href: "/locations/seo-manama" },

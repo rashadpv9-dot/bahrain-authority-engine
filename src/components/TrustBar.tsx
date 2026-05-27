@@ -87,7 +87,7 @@ export default function TrustBar() {
             Trusted by leading Bahrain businesses
           </p>
           <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 opacity-40">
-            {["Healthcare Co.", "Legal Partners", "Luxury Dining", "Premium RE", "Auto Group", "Finance Hub"].map((name, i) => (
+            {["Bahrain Agent", "NEC", "Yasmico", "Premium Medical", "Al-Doseri Law", "Moayed Properties"].map((name, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0 }}

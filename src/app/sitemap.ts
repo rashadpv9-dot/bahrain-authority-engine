@@ -16,11 +16,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   // Industry vertical hubs
-  const industries = ["healthcare", "legal", "food-and-beverage", "ecommerce"].map((ind) => ({
+  const industriesList = [
+    "healthcare", "legal", "food-and-beverage", "ecommerce",
+    "company-formation", "engineering", "retail-distribution",
+    "real-estate", "education", "automotive"
+  ];
+
+  const industries = industriesList.map((ind) => ({
     url: `${baseUrl}/industries/${ind}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.8,
+  }));
+
+  // Healthcare sub-pages (B2B niche playbooks)
+  const healthcareSubpages = ["dental", "dermatology", "obgyn", "orthopedics", "pediatrics"].map((sub) => ({
+    url: `${baseUrl}/industries/healthcare/${sub}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
   }));
 
   // Geographic target landing pages (Bahrain specific hubs)
@@ -42,5 +56,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...industries, ...locations, ...dynamicBlogPosts];
+  return [...staticRoutes, ...industries, ...healthcareSubpages, ...locations, ...dynamicBlogPosts];
 }
