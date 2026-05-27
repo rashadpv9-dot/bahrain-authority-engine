@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Share2, Mail, ShieldAlert, Cpu, Map, Zap } from "lucide-react";
+import { Share2, Mail, ShieldAlert, Cpu, Map, Zap, ExternalLink } from "lucide-react";
 
 const team = [
   {
@@ -113,7 +113,7 @@ export default function TeamSection() {
                   className="w-8 h-8 rounded-lg bg-white/[0.03] hover:bg-electric-blue/20 flex items-center justify-center text-soft-gray hover:text-white transition-all"
                   aria-label={`${member.name} LinkedIn`}
                 >
-                  <Linkedin className="w-4 h-4" />
+                  <ExternalLink className="w-4 h-4" />
                 </a>
                 <a
                   href={`mailto:${member.email}`}
